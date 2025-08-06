@@ -44,7 +44,7 @@ const Header = () => {
           {links.map((l) => (
             <Link
               key={l.id}
-              href={"#"}
+              href={l.url}
               className="text-white font-semibold hover:-translate-y-1 hover:transition-all hover:duration-500"
             >
               {l.title}
@@ -65,7 +65,7 @@ const links = [
   {
     id: 1,
     title: "Home",
-    url: "",
+    url: "/",
   },
   {
     id: 2,
@@ -75,17 +75,17 @@ const links = [
   {
     id: 3,
     title: "Admissions",
-    url: "",
+    url: "/home/admissions",
   },
 
   {
     id: 4,
     title: "Programmes",
-    url: "",
+    url: "/home/programmes",
   },
   {
     id: 5,
     title: "Student Results",
-    url: "",
+    url: "/home/results",
   },
 ];

@@ -3,7 +3,7 @@ import Header from "@/components/home/header";
 import { useRouter } from "next/router";
 import React from "react";
 
-const Clientlayout = ({
+const Dashboardlayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -18,4 +18,4 @@ const Clientlayout = ({
   );
 };
 
-export default Clientlayout;
+export default Dashboardlayout;
