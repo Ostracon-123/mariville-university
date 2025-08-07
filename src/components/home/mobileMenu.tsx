@@ -47,7 +47,7 @@ export function MobileMenu() {
 const links = [
   {
     title: "Home",
-    url: "",
+    url: "/",
   },
   {
     title: "About Us",
@@ -55,15 +55,15 @@ const links = [
   },
   {
     title: "Admissions",
-    url: "",
+    url: "/home/admissions",
   },
 
   {
     title: "Programmes",
-    url: "",
+    url: "/home/programmes",
   },
   {
     title: "Student Results",
-    url: "",
+    url: "/studentDashboard/results",
   },
 ];
