@@ -4,6 +4,7 @@ import { SelectCat } from "./selectCat";
 import { Button } from "../ui/button";
 import { StudTable } from "./studTable";
 import { StudChart } from "./studChart";
+import Link from "next/link";
 
 const Strip = () => {
   return (
@@ -19,7 +20,9 @@ const Strip = () => {
           <div className="h-7 w-7 rounded-full bg-[#761214] flex items-center justify-center">
             <h2 className="text-white text-sm font-bold">H</h2>
           </div>
-          <LogOut height={20} width={20} />
+          <Link href={"/home/login"} className="md:block hidden">
+            <LogOut height={20} width={20} />
+          </Link>
         </div>
       </div>
       <div className="grid md:grid-cols-3 items-center gap-4 grid-cols-1">

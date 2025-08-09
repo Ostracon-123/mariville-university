@@ -86,6 +86,6 @@ const links = [
   {
     id: 5,
     title: "Student Results",
-    url: "/home/results",
+    url: "/studentDashboard/results",
   },
 ];

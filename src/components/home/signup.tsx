@@ -41,6 +41,21 @@ function SignForm() {
   //     setLoading(false);
   // };
 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
+
+  const handleSignup = (e: React.FormEvent) => {
+    if (!email || !password) {
+      alert("Please enter both username and password");
+      return;
+    }
+    localStorage.setItem("studentUser", JSON.stringify({ email, password }));
+    e.preventDefault();
+    alert("Account created! Please log in.");
+    router.push("/home/login");
+  };
+
   return (
     <div className="flex p-6 pt-16 justify-center flex-col max-w-[500px] h-full font-raleway sm:h-screen sm:mx-auto">
       <div className="flex flex-col gap-2">
@@ -48,7 +63,7 @@ function SignForm() {
         <h3 className="text-xl">Create Your Account Here</h3>
       </div>
 
-      <form>
+      <form onSubmit={handleSignup}>
         <div className="space-y-3 py-5">
           <div className="grid grid-cols-2 gap-6">
             <input
@@ -78,6 +93,7 @@ function SignForm() {
               // value={formData.email}
               //   onChange={handleChange}
               required
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-black/10  dark:border border-gray-700 placeholder:dark:text-white outline-none p-3 rounded-xl placeholder:text-xs placeholder:text-black/50"
             />
             <div className="flex items-center bg-black/10 outline-none dark:border border-gray-700  p-3 rounded-xl grid-cols-2 justify-between">
@@ -88,6 +104,7 @@ function SignForm() {
                 // value={formData.password}
                 // onChange={handleChange}
                 required
+                onChange={(e) => setPassword(e.target.value)}
                 className="placeholder:text-xs  placeholder:dark:text-white placeholder:text-black/50 bg-transparent outline-none"
               />
               <Eye className="h-4 w-4" />
@@ -113,6 +130,7 @@ function SignForm() {
             </Link>
           </div>
           <Button
+            onClick={handleSignup}
             className="w-full rounded-full bg-[#761214]"
             type="submit"
             // disabled={loading}

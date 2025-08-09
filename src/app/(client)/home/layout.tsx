@@ -11,7 +11,6 @@ const Clientlayout = ({
   return (
     <div>
       <div>
-        <Header />
         <div>{children}</div>
       </div>
     </div>
