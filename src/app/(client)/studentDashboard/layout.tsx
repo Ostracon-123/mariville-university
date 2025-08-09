@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 const Dashboardlayout = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
 
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState<string>();
 
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -38,7 +38,7 @@ const Dashboardlayout = ({ children }: { children: React.ReactNode }) => {
           <div className="md:pt-0 pt-6">
             {email && (
               <h2 className="text-xl md:text-3xl font-semibold pb-6">
-                Hello {email}, Welcome 👋
+                Hello {email.toUpperCase()}, Welcome 👋
               </h2>
             )}
           </div>

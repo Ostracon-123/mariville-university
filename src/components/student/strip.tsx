@@ -1,5 +1,6 @@
+"use client";
 import { LogOut } from "lucide-react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SelectCat } from "./selectCat";
 import { Button } from "../ui/button";
 import { StudTable } from "./studTable";
@@ -7,6 +8,15 @@ import { StudChart } from "./studChart";
 import Link from "next/link";
 
 const Strip = () => {
+  const [email, setEmail] = useState<string>();
+
+  useEffect(() => {
+    const userJson = localStorage.getItem("studentUser");
+    if (userJson) {
+      const user = JSON.parse(userJson);
+      setEmail(user.email.split("@")[0] || null);
+    }
+  }, []);
   return (
     <div className="flex flex-col gap-10">
       <div className="px-4 py-2 shadow-md border rounded-md bg-white border-neutral-300 flex items-center justify-between">
@@ -14,11 +24,15 @@ const Strip = () => {
           <h4 className="text-neutral-600 text-xs md:text-sm">Live Results</h4>
         </div>
         <div className="flex items-center gap-3">
-          <h4 className="text-neutral-600 text-xs md:text-sm">
-            Endwell Heritage
-          </h4>
+          {email && (
+            <span className="text-sm text-neutral-500">
+              {email.toUpperCase()}
+            </span>
+          )}
           <div className="h-7 w-7 rounded-full bg-[#761214] flex items-center justify-center">
-            <h2 className="text-white text-sm font-bold">H</h2>
+            <h2 className="text-white text-sm font-bold">
+              {email?.charAt(0).toUpperCase() ?? ""}
+            </h2>
           </div>
           <Link href={"/home/login"} className="md:block hidden">
             <LogOut height={20} width={20} />
