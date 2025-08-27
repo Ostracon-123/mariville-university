@@ -21,7 +21,7 @@ const Hero = () => {
                 <Button
                   className={
                     b.text === "Get Started"
-                      ? `bg-white text-[#761214] px-10 rounded-full w-64 md:w-full hover:bg-white hover:-translate-y-1 transition-all duration-500`
+                      ? `bg-white text-blue-900 px-10 rounded-full w-64 md:w-full hover:bg-white hover:-translate-y-1 transition-all duration-500`
                       : "bg-transparent border border-white text-white w-64 md:w-full px-10 rounded-full  hover:bg-transparent hover:-translate-y-1 transition-all duration-500"
                   }
                 >
