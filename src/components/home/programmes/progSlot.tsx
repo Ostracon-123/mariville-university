@@ -30,7 +30,7 @@ const ProgSlot = () => {
               key={d.id}
               className="flex flex-col  items-center gap-4 md:px-5 md:py-10"
             >
-              <div className="h-14 w-14 flex items-center justify-center bg-[#761214]/50 rounded-full">
+              <div className="h-14 w-14 flex items-center justify-center bg-blue-900/50 rounded-full">
                 {d.icon}
               </div>
               <h2 className="text-xl font-semibold">{d.name}</h2>
@@ -46,7 +46,7 @@ const ProgSlot = () => {
               <Card key={c.id} className="md:pb-8">
                 <div className="pt-4">
                   <div className="flex flex-col gap-7 items-center">
-                    <div className="h-14 w-14 flex items-center justify-center bg-[#761214]/30 rounded-full">
+                    <div className="h-14 w-14 flex items-center justify-center bg-blue-900/30 rounded-full">
                       {c.icon}
                     </div>
                     <h3 className="md:text-2xl text-xl font-semibold md:w-44 w-32 text-center">
@@ -58,7 +58,7 @@ const ProgSlot = () => {
                       {slugs.map((s) => (
                         <div
                           key={s.id}
-                          className="flex flex-col gap-1 px-5 py-1 border-l-4 border-l-[#761214]"
+                          className="flex flex-col gap-1 px-5 py-1 border-l-4 border-l-blue-900bg-blue-900"
                         >
                           <h3 className="font-semibold md:text-lg">
                             {s.title}
@@ -107,12 +107,12 @@ const details = [
 const carddesc = [
   {
     id: 1,
-    icon: <GraduationCap color="#761214" />,
+    icon: <GraduationCap color="#1d398f" />,
     title: "Undergraduate Programmes",
   },
   {
     id: 2,
-    icon: <Clock color="#761214" />,
+    icon: <Clock color="#1d398f" />,
     title: "Postgraduate Studies",
   },
 ];

@@ -23,7 +23,7 @@ const AdmissionCards = () => {
             <Card key={c.id} className="">
               <div className="pt-4">
                 <div className="flex flex-col gap-7 items-center">
-                  <div className="h-14 w-14 flex items-center justify-center bg-[#761214]/30 rounded-full">
+                  <div className="h-14 w-14 flex items-center justify-center bg-blue-900/30 rounded-full">
                     {c.icon}
                   </div>
                   <h3 className="md:text-2xl text-xl font-semibold md:w-44 w-32 text-center">
@@ -35,7 +35,7 @@ const AdmissionCards = () => {
                     {slugs.map((s) => (
                       <div
                         key={s.id}
-                        className="flex flex-col gap-1 px-5 py-1 border-l-4 border-l-[#761214]"
+                        className="flex flex-col gap-1 px-5 py-1 border-l-4 border-l-blue-900"
                       >
                         <h3 className="font-semibold md:text-lg">{s.title}</h3>
                         <h4 className="text-xs md:text-sm text-black/70">
@@ -44,7 +44,7 @@ const AdmissionCards = () => {
                       </div>
                     ))}
                     <div className="pt-8">
-                      <Button className="w-full bg-[#761214] hover:bg-[#761214]/80 rounded-full">
+                      <Button className="w-full bg-blue-900 hover:bg-blue-900/80 rounded-full">
                         Apply Now
                       </Button>
                     </div>
@@ -65,17 +65,17 @@ export default AdmissionCards;
 const carddesc = [
   {
     id: 1,
-    icon: <GraduationCap color="#761214" />,
+    icon: <GraduationCap color="#1d398f" />,
     title: "Undergraduate Programmes",
   },
   {
     id: 2,
-    icon: <Clock color="#761214" />,
+    icon: <Clock color="#1d398f" />,
     title: "Postgraduate Studies",
   },
   {
     id: 3,
-    icon: <Lightbulb color="#761214" />,
+    icon: <Lightbulb color="#1d398f" />,
     title: "Part-Time Studies",
   },
 ];

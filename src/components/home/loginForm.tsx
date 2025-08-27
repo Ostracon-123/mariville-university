@@ -43,21 +43,20 @@ const LoginForm = () => {
     <div className="flex p-6 pt-16 justify-center flex-col max-w-[500px] h-full font-raleway sm:h-screen sm:mx-auto">
       <form onSubmit={handleLogin}>
         <div className="flex flex-col gap-3">
-          <p className="text-3xl font-bold">Welcome Back!</p>
-          <h3 className="text-xl">Login Here</h3>
+          <h3 className="text-3xl font-bold">Login Here</h3>
         </div>
         <div className="space-y-3 py-5">
           <div className="grid gap-3">
             <input
               type="email"
               name="email"
-              placeholder="Email: user@gmail.com"
-              className="bg-black/10 outline-none dark:border border-gray-700 p-3 rounded-xl placeholder:text-xs placeholder:dark:text-white placeholder:text-black/50"
+              placeholder="Email"
+              className="bg-black/10 outline-none dark:border border-gray-700 p-3  placeholder:text-xs placeholder:dark:text-white placeholder:text-black/50"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <div className="flex items-center bg-black/10 outline-none p-3 rounded-xl justify-between dark:border border-gray-700 dark:text-white">
+            <div className="flex items-center bg-black/10 outline-none p-3  justify-between dark:border border-gray-700 dark:text-white">
               <input
                 type="text"
                 name="password"
@@ -72,13 +71,13 @@ const LoginForm = () => {
           </div>
           <div className="flex items-center w-full pb-3 gap-1 text-xs">
             <p>Not yet a member?</p>
-            <Link href={"/home/signup"} className="text-[#761214] underline">
+            <Link href={"/home/signup"} className="text-blue-900 underline">
               Sign up
             </Link>
           </div>
           <Button
             onClick={handleLogin}
-            className="w-full rounded-full bg-[#761214]"
+            className="w-full rounded-md bg-blue-900"
             type="submit"
             // disabled={loading}
           >

@@ -25,18 +25,18 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="h-[84px] fixed top-0 left-0 right-0 z-50 bg-[#761214] shadow-md">
+    <div className="h-[84px] fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="p-4 md:px-14 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="bg-white h-12 w-12 rounded-full flex items-center justify-center">
-            <h4 className="text-lg font-semibold text-[#761214]">BFU</h4>
+          <div className="bg-blue-900 h-12 w-12 rounded-full flex items-center justify-center">
+            <h4 className="text-lg font-semibold text-white">MU</h4>
           </div>
           <div className="">
-            <h4 className="text-lg md:text-xl font-bold text-white">
-              Brookford University
+            <h4 className="text-lg md:text-xl font-bold text-blue-900">
+              Mariville University
             </h4>
-            <p className="text-xs md:text-[12px] text-gray-100">
-              Home of Prestige and Global Impact
+            <p className="text-xs md:text-[12px] text-gray-700">
+              Epitome of prestigious excellence
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Header = () => {
             <Link
               key={l.id}
               href={l.url}
-              className="text-white font-semibold hover:-translate-y-1 hover:transition-all hover:duration-500"
+              className="text-blue-900 font-semibold hover:-translate-y-1 hover:transition-all hover:duration-500"
             >
               {l.title}
             </Link>

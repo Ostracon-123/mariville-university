@@ -11,50 +11,50 @@ import {
 
 const studentResults = [
   {
-    courseCode: "CSC101",
-    courseTitle: "Introduction to Computer Science",
+    courseCode: "CSC201",
+    courseTitle: "Data Structures",
     credit: 3,
-    grade: "A",
-    gradePoint: 5.0,
-  },
-  {
-    courseCode: "MTH102",
-    courseTitle: "Calculus II",
-    credit: 4,
     grade: "B",
     gradePoint: 4.0,
   },
   {
-    courseCode: "PHY103",
-    courseTitle: "General Physics I",
-    credit: 3,
-    grade: "C",
-    gradePoint: 3.0,
+    courseCode: "MTH202",
+    courseTitle: "Probability and Statistics",
+    credit: 4,
+    grade: "A",
+    gradePoint: 5.0,
   },
   {
-    courseCode: "GST104",
-    courseTitle: "Use of English",
+    courseCode: "PHY203",
+    courseTitle: "Electromagnetism",
+    credit: 3,
+    grade: "B",
+    gradePoint: 4.0,
+  },
+  {
+    courseCode: "ENG204",
+    courseTitle: "Advanced English Composition",
     credit: 2,
     grade: "A",
     gradePoint: 5.0,
   },
   {
-    courseCode: "CHM105",
-    courseTitle: "Organic Chemistry",
+    courseCode: "CHE205",
+    courseTitle: "Physical Chemistry",
     credit: 3,
-    grade: "B",
-    gradePoint: 4.0,
+    grade: "C",
+    gradePoint: 3.0,
   },
   {
-    courseCode: "CSC106",
-    courseTitle: "Programming Fundamentals",
+    courseCode: "CSC206",
+    courseTitle: "Object-Oriented Programming",
     credit: 3,
     grade: "A",
     gradePoint: 5.0,
   },
   {
-    courseCode: "MTH107",
-    courseTitle: "Linear Algebra",
+    courseCode: "MTH207",
+    courseTitle: "Discrete Mathematics",
     credit: 3,
     grade: "B",
     gradePoint: 4.0,
@@ -101,13 +101,13 @@ export function StudTable() {
             <div className="flex flex-wrap gap-14">
               <span className="font-medium text-xs flex items-center gap-4">
                 Total Credit Requirement:
-                <span className="text-[#761214]">9</span>
+                <span className="text-blue-900">9</span>
               </span>
               <span className="font-medium text-xs flex items-center gap-4">
-                Total Credit Taken: <span className="text-[#761214]">12</span>
+                Total Credit Taken: <span className="text-blue-900">12</span>
               </span>
               <span className="font-medium text-xs flex items-center gap-4">
-                CGPA: <span className="text-[#761214]">4.78</span>
+                CGPA: <span className="text-blue-900">4.78</span>
               </span>
             </div>
           </TableCell>

@@ -59,13 +59,12 @@ function SignForm() {
   return (
     <div className="flex p-6 pt-16 justify-center flex-col max-w-[500px] h-full font-raleway sm:h-screen sm:mx-auto">
       <div className="flex flex-col gap-2">
-        <p className="text-3xl font-bold">Welcome!</p>
-        <h3 className="text-xl">Create Your Account Here</h3>
+        <h3 className="text-3xl font-bold">Create Your Account Here</h3>
       </div>
 
       <form onSubmit={handleSignup}>
         <div className="space-y-3 py-5">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid-cols-2 grid gap-6">
             <input
               type="text"
               name="firstName"
@@ -73,7 +72,7 @@ function SignForm() {
               // value={formData.firstName}
               //   onChange={handleChange}
               required
-              className="bg-black/10 outline-none p-4 dark:border border-gray-700 placeholder:dark:text-white rounded-xl placeholder:text-xs placeholder:text-black/50"
+              className="bg-black/10 outline-none p-4 dark:border border-gray-700 placeholder:dark:text-white rounded-md placeholder:text-xs placeholder:text-black/50"
             />
             <input
               type="text"
@@ -82,7 +81,7 @@ function SignForm() {
               // value={formData.lastName}
               //   onChange={handleChange}
               required
-              className="bg-black/10 outline-none p-3 dark:border border-gray-700 placeholder:dark:text-white rounded-xl placeholder:text-xs placeholder:text-black/50"
+              className="bg-black/10 outline-none p-3 dark:border border-gray-700 placeholder:dark:text-white rounded-md placeholder:text-xs placeholder:text-black/50"
             />
           </div>
           <div className="grid gap-3">
@@ -94,9 +93,9 @@ function SignForm() {
               //   onChange={handleChange}
               required
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-black/10  dark:border border-gray-700 placeholder:dark:text-white outline-none p-3 rounded-xl placeholder:text-xs placeholder:text-black/50"
+              className="bg-black/10  dark:border border-gray-700 placeholder:dark:text-white outline-none p-3 rounded-md placeholder:text-xs placeholder:text-black/50"
             />
-            <div className="flex items-center bg-black/10 outline-none dark:border border-gray-700  p-3 rounded-xl grid-cols-2 justify-between">
+            <div className="flex items-center bg-black/10 outline-none dark:border border-gray-700  p-3 rounded-md grid-cols-2 justify-between">
               <input
                 type="password"
                 name="password"
@@ -125,13 +124,13 @@ function SignForm() {
           {/* {error && <p className="text-red-500 text-sm">{error}</p>} */}
           <div className="flex items-center w-full pb-3 gap-1 text-xs">
             <p>Already a member?</p>
-            <Link href={"/home/login"} className="text-[#761214] underline">
+            <Link href={"/home/login"} className="text-blue-900 underline">
               Login
             </Link>
           </div>
           <Button
             onClick={handleSignup}
-            className="w-full rounded-full bg-[#761214]"
+            className="w-full rounded-md bg-blue-900"
             type="submit"
             // disabled={loading}
           >

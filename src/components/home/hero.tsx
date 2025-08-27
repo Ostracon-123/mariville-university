@@ -5,13 +5,13 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="h-[420px] md:h-[350px] bg-[#761214]">
+      <div className="h-[420px] md:h-[350px] bg-blue-900">
         <div className="flex flex-col gap-5 items-center pt-16 md:pt-20">
           <h4 className="text-sm md:text-xl  font-semibold text-neutral-200">
-            Begin Your Path to Greatness at
+            Embrace the path to prestige at
           </h4>
           <h1 className="text-6xl md:text-7xl font-bold text-white">
-            Brookford <br className="md:hidden" />
+            Mariville <br className="md:hidden" />
             University
           </h1>
 

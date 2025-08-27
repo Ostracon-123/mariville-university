@@ -5,7 +5,7 @@ import React from "react";
 const Sidebar = () => {
   return (
     <div>
-      <div className="bg-[#290c0c] h-screen shadow-xl p-4">
+      <div className="bg-blue-950 h-screen shadow-xl p-4">
         <div className="flex flex-col gap-10">
           {links.map((l) => (
             <Link

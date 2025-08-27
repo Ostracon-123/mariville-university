@@ -29,7 +29,7 @@ const Strip = () => {
               {email.toUpperCase()}
             </span>
           )}
-          <div className="h-7 w-7 rounded-full bg-[#761214] flex items-center justify-center">
+          <div className="h-7 w-7 rounded-full bg-blue-900 flex items-center justify-center">
             <h2 className="text-white text-sm font-bold">
               {email?.charAt(0).toUpperCase() ?? ""}
             </h2>
@@ -64,18 +64,18 @@ const Strip = () => {
           {btn.map((b) => (
             <Button
               key={b.title}
-              className="w-full bg-[#761214] hover:bg-[#761214]/80"
+              className="w-full bg-blue-900 hover:bg-blue-900/80"
             >
               {b.title}
             </Button>
           ))}
         </div>
-        <div className="md:col-span-2 md:pt-6">
+        <div className="md:col-span-4 md:pt-6">
           <StudTable />
         </div>
-        <div>
+        {/* <div>
           <StudChart />
-        </div>
+        </div> */}
       </div>
     </div>
   );

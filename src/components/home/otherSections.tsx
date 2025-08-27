@@ -14,7 +14,7 @@ const OtherSections = () => {
     >
       <div className="h-[400px] md:h-[650px] md:pt-0 pt-20">
         <img
-          src="/brookford.jpg"
+          src="/young-adults-meeting-up-study (1.jpg"
           alt=""
           className="h-full object-cover rounded-xl  w-full"
         />

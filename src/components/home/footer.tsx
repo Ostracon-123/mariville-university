@@ -5,17 +5,17 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="pt-24 md:pt-32">
-      <div className="bg-[#290c0c] pt-5">
+      <div className="bg-blue-950 pt-5">
         <div className="md:px-10 p-4 md:py-5 ">
           <div className="flex md:flex-row flex-col gap-8 justify-between">
             <div className="flex md:flex-row flex-col md:items-center gap-10 md:gap-20  pb-6 md:pb-8 pt-5">
               <div className="flex items-center gap-4">
                 <div className="bg-white h-12 w-12 rounded-full flex items-center justify-center">
-                  <h4 className="text-lg font-semibold text-[#761214]">BFU</h4>
+                  <h4 className="text-lg font-semibold text-blue-900">MU</h4>
                 </div>
                 <div className="">
                   <h4 className="text-lg md:text-xl font-bold text-white">
-                    Brookford University
+                    Mariville University
                   </h4>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                 {follow.map((f, index) => (
                   <div
                     key={index}
-                    className="h-10 w-10 rounded-full bg-[#761214]/50 flex items-center justify-center"
+                    className="h-10 w-10 rounded-full bg-blue-900/50 flex items-center justify-center"
                   >
                     <h2 className="text-sm md:text-lg text-white"> {f.text}</h2>
                   </div>
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           <div className="border-t border-t-red-50 flex items-center justify-center pt-9 md:pb-12">
             <h3 className="text-white/50 text-sm">
-              © 2024 Brookford University. All rights reserved.
+              © 2024 Mariville University. All rights reserved.
             </h3>
           </div>
         </div>
@@ -108,9 +108,9 @@ const quickLinks = [
 const contactInf = [
   {
     id: 1,
-    address: `1234 Brookford Avenue`,
+    address: `7234 Mariville Avenue`,
     num: "+1 (555) 123-4567",
-    email: "info@meridianuniversity.edu",
+    email: "info@mariville.edu",
   },
 ];
 

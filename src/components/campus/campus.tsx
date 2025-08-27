@@ -29,7 +29,7 @@ const Campus = () => {
             key={d.id}
             className="flex flex-col  items-center gap-4 md:px-5 md:py-10"
           >
-            <div className="h-14 w-14 flex items-center justify-center bg-[#761214]/50 rounded-full">
+            <div className="h-14 w-14 flex items-center justify-center bg-blue-900/50 rounded-full">
               {d.icon}
             </div>
             <h2 className="text-xl font-semibold">{d.name}</h2>
