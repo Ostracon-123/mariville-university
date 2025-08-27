@@ -44,7 +44,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Brookford University",
+  title: "Mariville University",
   description: "Created by writefreak studios",
 };
 
